@@ -5,6 +5,7 @@ use App\Http\Controllers\{
 };
 use Illuminate\Support\Facades\Route;
 
+Route::post('/register', [UserController::class, 'show2']) -> name('register');
 Route::get('/users', [UserController::class, 'index'])-> name('users.index');
 Route::get('/users/{id}', [UserController::class, 'show'])-> name('users.show');
 

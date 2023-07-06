@@ -13,4 +13,8 @@ class UserController extends Controller
     public function show($id){
         dd('users.show', $id);
     }
+
+    public function show2(){
+       dd('register');
+    }
 }

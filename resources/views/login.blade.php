@@ -11,7 +11,7 @@
         @csrf
         <div class="main-login">
             <div class="left-login">
-                <h1>Faça login <br> E entre para o nosso time</h1>
+                <h1>Bem Vindo<br> Faça login agora mesmo</h1>
                 <img src="iconbasquete.svg" class="left-login-img" alt="Icon Basquete">
             </div>
 
@@ -21,6 +21,10 @@
                     <div class="textfield">
                         <label for="usuario">Usuário</label>
                         <input type="text" name="usuario" placeholder="Usuário">
+                    </div>
+                    <div class="textfield">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Email">
                     </div>
                     <div class="textfield">
                         <label for="senha">Senha</label>

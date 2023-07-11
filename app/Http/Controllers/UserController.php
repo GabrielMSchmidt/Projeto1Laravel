@@ -19,6 +19,8 @@ class UserController extends Controller
     }
 
     public function show2(){
-       dd('register');
+        $users = User::get();
+
+        return view('users.index', compact('users'));
     }
 }

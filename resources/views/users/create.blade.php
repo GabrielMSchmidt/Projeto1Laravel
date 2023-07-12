@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,11 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="{{route('register')}}" method="post">
+    <form action="{{route('users.store')}}" method="post">
         @csrf
         <div class="main-login">
             <div class="left-login">
-                <h1>Bem Vindo<br> Faça login agora mesmo</h1>
+                <h1>Bem Vindo<br> Registre-se agora mesmo</h1>
                 <img src="iconbas.svg" class="left-login-img" alt="Icon Basquete">
             </div>
 
@@ -19,8 +19,8 @@
                 <div class="card-login">
                     <h1>LOGIN</h1>
                     <div class="textfield">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" placeholder="Usuário">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" placeholder="Nome">
                     </div>
                     <div class="textfield">
                         <label for="email">Email</label>
@@ -37,4 +37,3 @@
     </form>
 </body>
 </html>
-
